@@ -1,5 +1,7 @@
 # Tutorial - Get Started With Go
 
+***Link do tutorial: *** https://go.dev/doc/tutorial/create-module.html
+
 Este é o primeiro contato com a linaguagem. Nesse ponto do aprendizado estou bem confuso ainda
 com toda essa novidade da linguagem.
 

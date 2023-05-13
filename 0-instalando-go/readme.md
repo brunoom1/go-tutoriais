@@ -1,5 +1,7 @@
 # Instalando o GO
 
+***Link do tutorial:*** https://go.dev/doc/install
+
 Estou usando o Ubuntu, uma distribuição linux. E não tive nenhum problema para realizar a instalação
 em minha distro.
 

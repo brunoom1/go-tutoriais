@@ -1,5 +1,7 @@
 # Tutorial - Criar um módulo em GO
 
+***Link do tutorial***: https://go.dev/doc/tutorial/getting-started.html
+
 Começamos pela criação do módulo greetings. Esse módulo será usado pelo modo hello para mostrar a mensagem.
 
 Vamos então copiar agora o módulo hello do primeiro exemplo para a pasta do tutorial para modificar a chamada para usar o novo módulo.
