@@ -22,9 +22,22 @@ func SumFloats(m map[string]float64) float64 {
 	return s
 }
 
+type Number interface {
+	int64 | float64
+}
+
 // SumIntsOrFloats sums the values of map m. It supports both int64 and float64
 // as type for map values
 func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
+	var s V
+	for _, v := range m {
+		s += v
+	}
+
+	return s
+}
+
+func SumNums[K comparable, V Number](m map[K]V) V {
 	var s V
 	for _, v := range m {
 		s += v
@@ -48,6 +61,6 @@ func main() {
 	}
 
 	fmt.Printf("Non-Generic Sums: %v and %v\n", SumIntsOrFloats[string, int64](ints), SumIntsOrFloats[string, float64](floats))
-
 	fmt.Printf("Generic Sums, type parameters inferred: %v and %v\n", SumIntsOrFloats(ints), SumIntsOrFloats(floats))
+	fmt.Printf("Generic Sums with Constraints: %v and %v\n", SumNums(ints), SumNums(floats))
 }
